@@ -20,7 +20,7 @@ class Address:
     def get_details():
         return self.__dict__
     def set_address_details(address_details):
-        self.address_details
+        self.address_details=address_details
     def set_city(city):
         self.city=city
     def set_pincode(pincode):
