@@ -1,12 +1,6 @@
 class Address:
-    def get_HBA():
-        return self.HBA
-    def get_SRL():
-        return self.SRL
-    def get_ALS():
-        return self.ALS
-    def get_landmark():
-        return self.landmark
+    def get_address_details():
+        return self.address_details
     def get_VTC():
         return self.VTC
     def get_pincode():
@@ -21,8 +15,8 @@ class Address:
         return self.__dict__
     def set_address_details(address_details):
         self.address_details=address_details
-    def set_city(city):
-        self.city=city
+    def set_VTC(city):
+        self.VTC=city
     def set_pincode(pincode):
         self.pincode=pincode
     def set_subdistrict(subdistrict):
