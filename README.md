@@ -1,19 +1,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://aaryan-r-s.github.io/Hackathon-UIDAI-2021">
+  <a href="https://github.com/Aaryan-R-S/Hackathon-UIDAI-2021">
     <img src="readme-images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Address Formatting API</h3>
 
   <p align="center">
-    An API that formats the address present in raw form to a valid UIDAI  Addres
+    An API that formats the address present in raw form to a valid formatted UIDAI Addres
     <br />
     <strong>Explore the docs »</strong>
     <br />
     <br />
-    <a href="https://aaryan-r-s.github.io/Hackathon-UIDAI-2021">View Demo</a>
+    <a href="https://github.com/Aaryan-R-S/Hackathon-UIDAI-2021/tree/master/demo">View Demo</a>
     ·
     <a href="https://github.com/Aaryan-R-S/Hackathon-UIDAI-2021/issues">Report Bug</a>
     ·
@@ -21,7 +21,8 @@
     <br />
 </p>
 
-**Project Link** -> [Click Here](https://aaryan-r-s.github.io/Hackathon-UIDAI-2021)
+
+**See Demo** -> [Click Here](https://github.com/Aaryan-R-S/Hackathon-UIDAI-2021/tree/master/demo)
 <br>
 **Source Code** -> [Click Here](https://github.com/Aaryan-R-S/Hackathon-UIDAI-2021)
 <br>
@@ -55,16 +56,18 @@
 ## About The Project
 
 ![Product Name Screen Shot][product-screenshot]
+<br>
 
 ![Product Name Screen Shot][product-screenshots]
+<br>
+
+![Product Name Screen Shot][product-screenshotss]
 
 This is an Python API which is developed using Flask, requests and Flask restful python modules!
 
 ### Built With
 
-* [HTML](https://www.w3schools.com/html/)
-* [CSS](https://www.w3schools.com/css/default.asp)
-* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
 * [GitHub](https://github.com)
 
 
@@ -99,7 +102,11 @@ To get a local copy up and running follow these simple steps.
 ## Roadmap
 
 - Clone the repo and open it in suitable IDE for complete project backend code. 
-- Then run the API by running python file `Address_API.py`. - To make request open the browser and paste `http://127.0.0.1:5000?addr={address}`.
+- Then run the API by running python file `API.py`. 
+  ```sh
+  python ./API.py
+  ```
+- To make request open the browser and paste `http://127.0.0.1:5000?raw={address separated by commas}`.
 
 
 
@@ -114,7 +121,7 @@ To get a local copy up and running follow these simple steps.
 - Yogesh Kaushik - yogesh200163@iiitd.ac.in
 
 
-Project Link - [https://aaryan-r-s.github.io/Hackathon-UIDAI-2021](https://aaryan-r-s.github.io/Hackathon-UIDAI-2021)
+Project Link - [https://github.com/Aaryan-R-S/Hackathon-UIDAI-2021](https://github.com/Aaryan-R-S/Hackathon-UIDAI-2021)
 
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -128,3 +135,4 @@ Project Link - [https://aaryan-r-s.github.io/Hackathon-UIDAI-2021](https://aarya
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: readme-images/screenshot.png
 [product-screenshots]: readme-images/screenshots.png
+[product-screenshotss]: readme-images/screenshotss.png

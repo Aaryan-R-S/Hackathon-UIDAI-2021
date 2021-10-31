@@ -1,27 +1,65 @@
 class Address:
-    def get_address_details():
-        return self.address_details
-    def get_VTC():
-        return self.VTC
-    def get_pincode():
-        return self.pincode
-    def get_subdistrict():
-        return self.subdistrict
-    def get_district():
-        return self.district
-    def get_state():
-        return self.state
-    def get_details():
-        return self.__dict__
-    def set_address_details(address_details):
-        self.address_details=address_details
-    def set_VTC(city):
-        self.VTC=city
-    def set_pincode(pincode):
-        self.pincode=pincode
-    def set_subdistrict(subdistrict):
-        self.subdistrict=subdistrict
-    def set_district(district):
-        self.district=district
-    def set_state(state):
-        self.state=state
+    # --------------------- Structure of the Address class starts ----------------------------
+    # If NOT in UT:
+    # (*)House/Building/Apartment, 
+    # Street/Road/Lane,
+    # (*)Area/Locality/Sector,
+    # Landmark,
+    # (*)Village/Town/City,         (if it is district also, then remove it)
+    # Sub District, 
+    # (*)District, 
+    # (*)State - 
+    # (*)Pincode
+    
+    # If in UT:
+    # (*)House/Building/Apartment, 
+    # Street/Road/Lane,
+    # (*)Area/Locality/Sector,
+    # Landmark,
+    # Village/Town/City,            (no use)
+    # Sub District,                 (no use)
+    # (*)District,              
+    # (*)State -                    (city itself)
+    # (*)Pincode
+
+    # --------------------- attributes of the Address class object ----------------------------    
+    _localAddr = []         # House/Building/Apartment, Street/Road/Lane, Area/Locality/Sector, Landmark
+    _vtc = ""               # Village/Town/City
+    _subNdistrict = []      # Subdistrict and district
+    _state = ""             # State/UT
+    _pincode = ""           # Pincode
+    
+    # --------------------- getter methods ----------------------------    
+    def get_localAddr(self):
+        return self._localAddr
+    
+    def get_vtc(self):
+        return self._vtc
+    
+    def get_subNdistrict(self):
+        return self._subNdistrict
+
+    def get_state(self):
+        return self._state
+
+    def get_pincode(self):
+        return self._pincode
+
+    def get_all(self):
+        return self._localAddr + [self. _vtc] + self._subNdistrict + [self._state, self._pincode]
+
+    # --------------------- settor methods ----------------------------    
+    def set_localAddr(self, params):
+        self._localAddr = params
+
+    def set_vtc(self, params):
+        self._vtc = params
+
+    def set_subNdistrict(self, params):
+        self._subNdistrict = params
+
+    def set_state(self, params):
+        self._state = params
+
+    def set_pincode(self, params):
+        self._pincode = params
